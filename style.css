@@ -64,3 +64,25 @@ section {
 @media (max-width: 600px) {
     .top-nav .nav-links { display: none; }
 }
+
+/* Sections côte à côte */
+.flex-sections {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.flex-sections section {
+    flex: 1 1 320px;
+}
+.flex-sections img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 6px;
+}
+
+/* Responsive: empile sur petits écrans */
+@media (max-width: 700px) {
+    .flex-sections { flex-direction: column; }
+}
